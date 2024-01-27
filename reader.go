@@ -469,7 +469,7 @@ type ReaderConfig struct {
 	JoinGroupBackoff time.Duration
 
 	// RetentionTime optionally sets the length of time the consumer group will be saved
-	// by the broker. 1 will disable the setting and leave the
+	// by the broker. -1 will disable the setting and leave the
 	// retention up to the broker's offsets.retention.minutes property. By
 	// default, that setting is 1 day for kafka < 2.0 and 7 days for kafka >= 2.0.
 	//
